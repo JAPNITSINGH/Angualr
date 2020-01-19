@@ -1,0 +1,34 @@
+<h2>Users</h2>
+  <p>User_Name F</p>
+  <input #box (keyup.enter)="onEnter(box.value)">
+ 
+
+  <p>User_Name L</p>
+  <input #box2 (keyup.enter)="onEnter2(box2.value)">
+
+
+  <p>DOB</p>
+  <input #box3 (keyup.enter)="onEnter3(box3.value)">
+  
+  
+  <p>City</p>
+  <input #box4 (keyup.enter)="onEnter4(box4.value)">
+ 
+ 
+  <button (click) = "onClickListner()">Click here for Submit!</button>{{ clickMessage }}
+    <br>
+  <table style="width: 100%;"> 
+    <tr>
+      <th>First_Name</th>
+      <th>Last_Name</th>
+      <th>DOB</th>
+      <th>City</th>
+    </tr>
+    <tr>
+      <th>{{ value_F }}</th>
+      <th>{{ value_L }}</th>
+      <th>{{ value_D }}</th>
+      <th>{{ value_C }}</th>
+    </tr>
+  </table>
+ 
